@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+
+ruby '2.0.0'
 gem 'rails'
 gem 'bootstrap-sass'
 gem 'bcrypt-ruby'
@@ -8,6 +10,12 @@ gem 'will_paginate'
 gem 'bootstrap-will_paginate'
 gem 'jquery-rails'
 gem 'turbolinks'
+gem 'jbuilder', '~> 1.2'
+gem 'jquery-ui-rails'
+gem 'sass-rails', '~> 4.0.0'
+gem 'coffee-rails', '~> 4.0.0'
+gem 'uglifier', '>= 1.3.0'
+
 
 
 group :development, :test do
@@ -23,9 +31,7 @@ end
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails'
-  gem 'coffee-rails'
-  gem 'uglifier'
+  
 end
 
 group :test do
@@ -44,6 +50,10 @@ group :production do
   gem 'rails_12factor'
 end
 
+group :doc do
+  # bundle exec rake doc:rails generates the API under doc/api.
+  gem 'sdoc', require: false
+end
 
 
 
