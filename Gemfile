@@ -17,6 +17,7 @@ group :development, :test do
   gem 'guard-spork'
   gem 'childprocess'
   gem 'spork'
+  gem 'quiet_assets'
 end
 
 # Gems used only for assets and not required
@@ -39,6 +40,8 @@ end
 
 group :production do
   gem 'pg'
+  gem 'unicorn'
+  gem 'rails_12factor'
 end
 
 
